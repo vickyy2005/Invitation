@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <style>
+      .c-line {
+        fill: none;
+        stroke: #c59f37;
+        stroke-width: 1.4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-opacity: 0.65;
+      }
+      .c-gold {
+        fill: #d4af37;
+        fill-opacity: 0.5;
+      }
+    </style>
+  </defs>
+
+  <!-- Outer corner frame border -->
+  <path d="M 6,95 L 6,18 C 6,11.4 11.4,6 18,6 L 95,6" class="c-line"/>
+  <path d="M 14,80 L 14,24 C 14,18.5 18.5,14 24,14 L 80,14" class="c-line" stroke-width="0.9" stroke-dasharray="3,3"/>
+
+  <!-- Ornate corner scrollwork & leaf -->
+  <path d="M 14,14 C 28,14 36,24 42,42 C 24,36 14,28 14,14 Z" class="c-gold"/>
+  <path d="M 6,6 Q 22,22 36,12 Q 22,22 6,6" class="c-line"/>
+  <circle cx="28" cy="28" r="3" class="c-gold"/>
+  <circle cx="48" cy="14" r="2" class="c-gold"/>
+  <circle cx="14" cy="48" r="2" class="c-gold"/>
+  <circle cx="68" cy="6" r="2.5" class="c-gold"/>
+  <circle cx="6" cy="68" r="2.5" class="c-gold"/>
+
+  <!-- Curled tendrils -->
+  <path d="M 14,58 Q 24,68 18,78" class="c-line"/>
+  <path d="M 58,14 Q 68,24 78,18" class="c-line"/>
+</svg>

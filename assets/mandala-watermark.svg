@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fdf4d7" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#d4af37" stop-opacity="0.5"/>
+      <stop offset="80%" stop-color="#aa8624" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .m-line {
+        fill: none;
+        stroke: #d4af37;
+        stroke-width: 1.2;
+        stroke-opacity: 0.35;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .m-line-thick {
+        fill: none;
+        stroke: #c29929;
+        stroke-width: 2.2;
+        stroke-opacity: 0.45;
+      }
+      .m-line-dashed {
+        fill: none;
+        stroke: #d4af37;
+        stroke-width: 1.5;
+        stroke-dasharray: 4, 6;
+        stroke-opacity: 0.4;
+      }
+      .m-fill-soft {
+        fill: #d4af37;
+        fill-opacity: 0.06;
+      }
+      .m-accent {
+        fill: #d4af37;
+        fill-opacity: 0.35;
+      }
+    </style>
+  </defs>
+
+  <g transform="translate(300, 300)">
+    <!-- Radial ambient glow -->
+    <circle cx="0" cy="0" r="280" fill="url(#goldGlow)"/>
+
+    <!-- Concentric Rings -->
+    <circle cx="0" cy="0" r="260" class="m-line"/>
+    <circle cx="0" cy="0" r="252" class="m-line-dashed"/>
+    <circle cx="0" cy="0" r="236" class="m-line"/>
+    <circle cx="0" cy="0" r="200" class="m-line-dashed"/>
+    <circle cx="0" cy="0" r="160" class="m-line-thick"/>
+    <circle cx="0" cy="0" r="110" class="m-line"/>
+    <circle cx="0" cy="0" r="60" class="m-line-dashed"/>
+    <circle cx="0" cy="0" r="20" class="m-fill-soft"/>
+    <circle cx="0" cy="0" r="8" class="m-accent"/>
+
+    <!-- 16 Large Outer Lotus Petals -->
+    <!-- We repeat 16 lotus petals using rotate -->
+    <g id="petals-16">
+      <!-- 0 deg -->
+      <path d="M 0,-160 C 26,-195 40,-225 0,-252 C -40,-225 -26,-195 0,-160 Z" class="m-line" fill="#d4af37" fill-opacity="0.04"/>
+      <path d="M 0,-160 C 14,-190 20,-215 0,-236 C -20,-215 -14,-190 0,-160 Z" class="m-line"/>
+      <circle cx="0" cy="-256" r="3.5" class="m-accent"/>
+      <circle cx="0" cy="-244" r="2" class="m-accent"/>
+    </g>
+    <use href="#petals-16" transform="rotate(22.5)"/>
+    <use href="#petals-16" transform="rotate(45)"/>
+    <use href="#petals-16" transform="rotate(67.5)"/>
+    <use href="#petals-16" transform="rotate(90)"/>
+    <use href="#petals-16" transform="rotate(112.5)"/>
+    <use href="#petals-16" transform="rotate(135)"/>
+    <use href="#petals-16" transform="rotate(157.5)"/>
+    <use href="#petals-16" transform="rotate(180)"/>
+    <use href="#petals-16" transform="rotate(202.5)"/>
+    <use href="#petals-16" transform="rotate(225)"/>
+    <use href="#petals-16" transform="rotate(247.5)"/>
+    <use href="#petals-16" transform="rotate(270)"/>
+    <use href="#petals-16" transform="rotate(292.5)"/>
+    <use href="#petals-16" transform="rotate(315)"/>
+    <use href="#petals-16" transform="rotate(337.5)"/>
+
+    <!-- 12 Mid-tier Pointed Filigree Petals -->
+    <g id="petals-mid">
+      <path d="M 0,-110 C 22,-128 32,-145 0,-160 C -32,-145 -22,-128 0,-110 Z" class="m-line" fill="#d4af37" fill-opacity="0.08"/>
+      <circle cx="0" cy="-136" r="2.5" class="m-accent"/>
+    </g>
+    <use href="#petals-mid" transform="rotate(30)"/>
+    <use href="#petals-mid" transform="rotate(60)"/>
+    <use href="#petals-mid" transform="rotate(90)"/>
+    <use href="#petals-mid" transform="rotate(120)"/>
+    <use href="#petals-mid" transform="rotate(150)"/>
+    <use href="#petals-mid" transform="rotate(180)"/>
+    <use href="#petals-mid" transform="rotate(210)"/>
+    <use href="#petals-mid" transform="rotate(240)"/>
+    <use href="#petals-mid" transform="rotate(270)"/>
+    <use href="#petals-mid" transform="rotate(300)"/>
+    <use href="#petals-mid" transform="rotate(330)"/>
+
+    <!-- 8 Inner Blossoms -->
+    <g id="petals-inner">
+      <path d="M 0,-20 C 14,-35 22,-48 0,-60 C -22,-48 -14,-35 0,-20 Z" class="m-line" fill="#d4af37" fill-opacity="0.12"/>
+      <circle cx="0" cy="-40" r="2" class="m-accent"/>
+    </g>
+    <use href="#petals-inner" transform="rotate(45)"/>
+    <use href="#petals-inner" transform="rotate(90)"/>
+    <use href="#petals-inner" transform="rotate(135)"/>
+    <use href="#petals-inner" transform="rotate(180)"/>
+    <use href="#petals-inner" transform="rotate(225)"/>
+    <use href="#petals-inner" transform="rotate(270)"/>
+    <use href="#petals-inner" transform="rotate(315)"/>
+  </g>
+</svg>
