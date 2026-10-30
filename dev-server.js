@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 8765;
+const PORT = process.env.PORT || 8765;
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
@@ -17,7 +17,7 @@ const MIME_TYPES = {
 };
 
 const server = http.createServer((req, res) => {
-  // Always send cache-busting headers to prevent stale cache
+  // Always send cache-busting headers to prevent stale cache during development
   res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
   res.setHeader('Pragma', 'no-cache');
   res.setHeader('Expires', '0');

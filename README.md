@@ -24,7 +24,8 @@ A luxury, interactive, mobile-responsive wedding invitation web application craf
 Run the lightweight built-in Node.js server:
 
 ```bash
-node server.js
+npm start
+# or: node dev-server.js
 ```
 
 Then open your browser and navigate to:
