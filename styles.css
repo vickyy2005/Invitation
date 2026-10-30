@@ -1142,16 +1142,11 @@ a {
   position: relative;
 }
 
-/* Celebratory Brand Header */
+/* Clean & Elegant Brand Header */
 .nav-brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   font-family: var(--font-serif);
-  font-size: 1.55rem;
-  font-weight: 600;
-  color: #381e13;
-  letter-spacing: 0.04em;
   text-decoration: none;
   transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -1160,34 +1155,17 @@ a {
   transform: scale(1.02);
 }
 
-/* Royal Crown Badge with celebratory floating pulse */
-.brand-crest {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #fff2cf 0%, #e2be53 60%, #c49a31 100%);
-  color: #2b1807;
-  font-size: 0.84rem;
-  box-shadow: 
-    0 3px 12px rgba(212, 175, 55, 0.5),
-    inset 0 1px 1px rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  animation: crestPulse 3s ease-in-out infinite alternate;
-}
-
-@keyframes crestPulse {
-  0% { transform: scale(0.96) rotate(-3deg); }
-  100% { transform: scale(1.08) rotate(3deg); }
-}
-
 .brand-names {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 4vw, 1.68rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
   background: linear-gradient(135deg, #2b170c 0%, #4a2717 60%, #32180c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+  display: inline-flex;
+  align-items: baseline;
 }
 
 .brand-amp {
@@ -1195,20 +1173,9 @@ a {
   font-style: italic;
   color: #d4af37;
   -webkit-text-fill-color: #d4af37;
-  font-size: 1.45rem;
-  margin: 0 4px;
-  filter: drop-shadow(0 1px 3px rgba(212, 175, 55, 0.5));
-}
-
-.brand-sparkle {
-  color: #d4af37;
-  font-size: 0.88rem;
-  animation: sparkleTwinkle 2.4s ease-in-out infinite alternate;
-}
-
-@keyframes sparkleTwinkle {
-  0% { transform: scale(0.8) rotate(0deg); opacity: 0.6; }
-  100% { transform: scale(1.2) rotate(30deg); opacity: 1; filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.85)); }
+  font-size: 1.35em;
+  margin: 0 5px;
+  filter: drop-shadow(0 1px 2px rgba(212, 175, 55, 0.45));
 }
 
 /* Glassmorphic Nav Links */
